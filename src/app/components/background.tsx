@@ -6,12 +6,6 @@ const Background: React.FC = () => {
     return (
       <div
         id="background"
-        style={{
-          position: "absolute",
-          width: "100vw",
-          height: "100vh",
-          overflow: "hidden",
-        }}
       >
         <Spline
           scene="https://prod.spline.design/j3rCRG34mDRp4bia/scene.splinecode"
