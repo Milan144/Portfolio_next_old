@@ -17,7 +17,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div style={{ position: "absolute", width: "100%", height: "100%" }}>
+        <div
+          style={{
+            position: "absolute",
+            width: "100%",
+            height: "100%",
+            zIndex: 0,
+          }}
+        >
           <Background />
         </div>
         <div style={{ position: "relative", zIndex: 1 }}>{children}</div>
