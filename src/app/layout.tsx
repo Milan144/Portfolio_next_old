@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
-import Background from "./components/background";
-import Navbar from './components/navbar"
+import Background from "./components/Background"
+import Navbar from "./components/Navbar"
 
 export const metadata: Metadata = {
   title: "Milan Hommet",
