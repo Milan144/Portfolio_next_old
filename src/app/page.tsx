@@ -5,7 +5,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "About me", href: "#" },
+  { name: "About me", href: "/about" },
   { name: "Projects", href: "#" },
 ];
 
@@ -109,7 +109,7 @@ export default function Example() {
                 My projects
               </a>
               <a
-                href="/"
+                href="/about"
                 className="text-sm font-semibold leading-6 text-white-900 stroke"
               >
                 About me <span aria-hidden="true">→</span>
