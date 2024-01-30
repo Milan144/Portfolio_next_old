@@ -4,21 +4,10 @@ import React from "react";
 export default function about() {
   return (
     <section className="mt-10 p-4">
-      <div className="w-full md:w-1/2 md:mx-auto flex flex-col md:flex-row items-center justify-center text-center">
-        <Image
-          className="inline-flex object-cover border-4 border-gray-900 rounded-full bg-indigo-50 h-24 w-24 !h-32 !w-32 mb-4 md:mb-0 ml-0 md:mr-5"
-          src="/assets/img/profile.JPG"
-          alt="profile"
-          width={128}
-          height={128}
-        />
+      <div className="w-full md:w-1/2 md:mx-auto flex flex-col md:flex-row items-center justify-center text-center border-black">
         <div className="flex flex-col">
           <div className="md:text-justify mb-3">
             <div className="flex flex-col mb-5">
-              <p className="text-white-900 font-bold text-xl stroke">
-                Milan Hommet
-              </p>
-
               <ul className="mt-2 flex flex-row items-center justify-center md:justify-start ">
                 <li className="mr-5">
                   <a
@@ -38,21 +27,8 @@ export default function about() {
                     </svg>
                   </a>
                 </li>
-
-                {/* <li>
-                            <a href="" target="_blank" aria-label="Twitter">
-                                <svg className="h-6 text-white-700 hover:text-white-300" fill="currentColor" role="img"
-                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <title>Twitter</title>
-                                    <path
-                                        d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z">
-                                    </path>
-                                </svg>
-                            </a>
-                        </li> */}
               </ul>
             </div>
-
             <p className="text-white-300 font-semibold text-center md:text-left stroke">
               Developer student | Based in France | 22 years old | Passionate
               about new technologies and development
@@ -60,6 +36,15 @@ export default function about() {
           </div>
         </div>
       </div>
+      <div className="flex justify-center">
+        <Image
+          className="border-black"
+          src="/assets/img/cv.png"
+          alt="cv"
+          width={500}
+          height={500}
+        />
+      </div>
     </section>
   );
-};
+}

@@ -25,7 +25,7 @@ export default function RootLayout({
             zIndex: 0,
           }}
         >
-          <Background />
+          {/* <Background /> */}
         </div>
         <div style={{ position: "relative", zIndex: 1 }}>{children}</div>
       </body>
