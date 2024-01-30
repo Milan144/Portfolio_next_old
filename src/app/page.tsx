@@ -1,83 +1,6 @@
-'use client'
-import { useState } from "react";
-import { Dialog } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-
-const navigation = [
-  { name: "Home", href: "/" },
-  { name: "About me", href: "/about" },
-  { name: "Projects", href: "#" },
-];
-
 export default function Example() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   return (
     <div>
-      <header className="absolute inset-x-0 top-0 z-50">
-        <nav
-          className="flex items-center justify-between p-6 lg:px-8"
-          aria-label="Global"
-        >
-          <div className="flex lg:hidden">
-            <button
-              type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white-700"
-              onClick={() => setMobileMenuOpen(true)}
-            >
-              <span className="sr-only stroke">Open main menu</span>
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-            </button>
-          </div>
-          <div className="hidden lg:flex lg:gap-x-20 justify-center min-h-screen mx-auto">
-            {navigation.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="stroke text-sm font-semibold leading-6 text-white-900"
-              >
-                {item.name}
-              </a>
-            ))}
-          </div>
-        </nav>
-        <Dialog
-          as="div"
-          className="lg:hidden"
-          open={mobileMenuOpen}
-          onClose={setMobileMenuOpen}
-        >
-          <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white-900/10">
-            <div className="flex items-center justify-between">
-              <button
-                type="button"
-                className="-m-2.5 rounded-md p-2.5 text-white-700"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                <span className="sr-only stoke">Close menu</span>
-                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
-              </button>
-            </div>
-            <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-white-500/10">
-                <div className="space-y-2 py-6">
-                  {navigation.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className=" stroke -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white-900"
-                    >
-                      {item.name}
-                    </a>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </Dialog.Panel>
-        </Dialog>
-      </header>
-
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -98,12 +21,12 @@ export default function Example() {
             </h1>
             <div className="hidden sm:mb-8 sm:flex sm:justify-center">
               <div className="border-glow relative rounded-full px-3 py-1 text-xl leading-6 text-white-600 mt-11">
-                <h3>Developer student </h3>
+                <h3 className="stroke">Developer student </h3>
               </div>
             </div>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="#"
+                href="/projects"
                 className="stroke rounded-xl button-black bg-black px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 My projects
