@@ -1,10 +1,11 @@
 import Image from "next/image";
 import React from "react";
+import "./about.css";
 
 export default function about() {
   return (
     <section className="mt-10 p-4">
-      <div className="w-full md:w-1/2 md:mx-auto flex flex-col md:flex-row items-center justify-center text-center">
+      <div className="w-full md:w-1/2 md:mx-auto flex flex-col md:flex-row items-center justify-center text-center my-10">
         <Image
           className="inline-flex object-cover border-4 border-gray-900 rounded-full bg-indigo-50 h-24 w-24 !h-32 !w-32 mb-4 md:mb-0 ml-0 md:mr-5"
           src="/assets/img/profile.JPG"

@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 import Background from './components/background';
+import Navbar from './components/navbar';
 
 export const metadata: Metadata = {
   title: "Milan Hommet",
@@ -27,7 +28,10 @@ export default function RootLayout({
         >
           <Background />
         </div>
-        <div style={{ position: "relative", zIndex: 1 }}>{children}</div>
+        <div style={{ position: "relative", zIndex: 1 }}>
+          <Navbar />
+          {children}
+          </div>
       </body>
     </html>
   );
