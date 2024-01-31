@@ -21,7 +21,7 @@ export default function Projects() {
                 School project
               </span>
               <p className="text-lg font-bold text-black truncate block capitalize">
-                Impact UGC - Landing page / MVP
+                Impact UGC - MVP
               </p>
             </div>
           </a>
