@@ -8,7 +8,7 @@ export default function Projects() {
         className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mb-5"
       >
         <div className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
-          <a href="https://impact-mvp.hommet.ch/">
+          <a href="https://impact.hommet.ch/">
             <Image
               src="/assets/img/impact.png"
               alt="Product"
